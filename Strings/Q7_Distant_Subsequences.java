@@ -1,0 +1,16 @@
+public class Q7_Distant_Subsequences {
+    public int numDistinct(String s, String t) {
+        int m = s.length();
+        int n = t.length();
+        int arr[] = new int[n + 1];
+        arr[0] = 1;
+        for (int i = 1; i <= m; i++) {
+            for (int j = n; j >= 1; j--) {
+                if (s.charAt(i - 1) == t.charAt(j - 1)) {
+                    arr[j] = arr[j - 1] + arr[j];
+                }
+            }
+        }
+        return arr[n];
+    }
+}
