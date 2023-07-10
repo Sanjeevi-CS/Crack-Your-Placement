@@ -1,0 +1,16 @@
+package Mathematical;
+
+public class Q5_KthFactorOf_n {
+    public int kthFactor(int n, int k) {
+        int count = 1;
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                if (count == k) {
+                    return i;
+                }
+                count++;
+            }
+        }
+        return -1;
+    }
+}
