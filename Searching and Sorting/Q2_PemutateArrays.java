@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Q2_PemutateArrays {
-    public static boolean ans(Integer a[], int b[], int k) {
+    public static boolean ans(int a[], int b[], int k) {
         int n = a.length;
         int m = b.length;
         if (n != m) {
@@ -29,6 +29,6 @@ public class Q2_PemutateArrays {
         for (int i = 0; i < n; i++) {
             b[i] = input.nextInt();
         }
-        System.out.println(ans(a, b));
+        System.out.println(ans(a, b,m));
     }
 }
