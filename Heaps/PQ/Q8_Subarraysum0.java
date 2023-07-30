@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 class Main{
     public static int maxzero(int []arr,int n){
-        int l=0;
+        int l=0;    
         for(int i=0;i<n;i++){
             int s=0;
             for(int j=i;j<n;j++){
